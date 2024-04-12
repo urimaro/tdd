@@ -9,5 +9,6 @@ RSpec.describe "Money" do
 
   it "is considered equal to another one with the same amount" do
     expect(Dollar.new(5)).to eq Dollar.new(5)
+    expect(Dollar.new(5)).not_to eq Dollar.new(6)
   end
 end
