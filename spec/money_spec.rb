@@ -6,4 +6,8 @@ RSpec.describe "Money" do
     product = five.times(3)
     expect(product.amount).to eq 15
   end
+
+  it "is considered equal to another one with the same amount" do
+    expect(Dollar.new(5)).to eq Dollar.new(5)
+  end
 end
