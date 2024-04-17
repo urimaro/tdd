@@ -1,6 +1,6 @@
 RSpec.describe "Money" do
   it "can be multiplied" do
-    five = Dollar.new(5)
+    five = Money.dollar(5)
     expect(five.times(2)).to eq Dollar.new(10)
     expect(five.times(3)).to eq Dollar.new(15)
   end
