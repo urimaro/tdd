@@ -1,6 +1,10 @@
 class Money
   attr_reader :amount
 
+  def times(multiplier)
+    raise NotImplementedError
+  end
+
   def ==(object)
     @amount == object.amount && self.class == object.class
   end
