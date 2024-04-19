@@ -5,6 +5,10 @@ class Money
     raise NotImplementedError
   end
 
+  def currency()
+    raise NotImplementedError
+  end
+
   def ==(object)
     @amount == object.amount && self.class == object.class
   end
