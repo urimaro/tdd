@@ -1,12 +1,12 @@
 class Money
-  attr_reader :amount
+  attr_reader :amount, :currency
 
   def times(multiplier)
     raise NotImplementedError
   end
 
   def currency()
-    raise NotImplementedError
+    @currency
   end
 
   def ==(object)
