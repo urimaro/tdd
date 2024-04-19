@@ -18,4 +18,9 @@ RSpec.describe "Money" do
     expect(five.times(2)).to eq Money.franc(10)
     expect(five.times(3)).to eq Money.franc(15)
   end
+
+  it "returns its currency" do
+    expect(Money.dollar(1).currency).to eq "USD"
+    expect(Money.franc(1).currency).to eq "CHF"
+  end
 end
