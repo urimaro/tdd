@@ -23,4 +23,8 @@ RSpec.describe "Money" do
     expect(Money.dollar(1).currency).to eq "USD"
     expect(Money.franc(1).currency).to eq "CHF"
   end
+
+  it "is considered equal to objects of other classes" do
+    expect(Money.new(10, "CHF")).to eq Franc.new(10, "CHF")
+  end
 end
