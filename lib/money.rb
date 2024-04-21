@@ -18,6 +18,10 @@ class Money
     @amount == object.amount && self.class == object.class
   end
 
+  def to_str()
+    @amount + " " + @currency
+  end
+
   def self.dollar(amount)
     Dollar.new(amount, "USD")
   end
