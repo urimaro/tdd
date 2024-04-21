@@ -15,7 +15,7 @@ class Money
   end
 
   def ==(object)
-    @amount == object.amount && self.class == object.class
+    @amount == object.amount && @currency == object.currency
   end
 
   def to_str()
