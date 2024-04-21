@@ -1,6 +1,11 @@
 class Money
   attr_reader :amount, :currency
 
+  def initialize(amount, currency)
+    @amount = amount
+    @currency = currency
+  end
+
   def times(multiplier)
     raise NotImplementedError
   end
