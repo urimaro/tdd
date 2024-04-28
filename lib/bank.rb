@@ -6,7 +6,7 @@ class Bank
 
   def reduce(source, to)
     if source.is_a?(Money)
-      return source
+      return source.reduce(to)
     end
     source.reduce(to)
   end
