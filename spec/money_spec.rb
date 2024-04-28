@@ -30,4 +30,11 @@ RSpec.describe "Money" do
     expect(five).to eq sum.augend
     expect(five).to eq sum.addend
   end
+
+  it "reduces Sum" do
+    sum = Sum.new(Money.dollar(3), Money.dollar(4))
+    bank = Bank.new
+    result = bank.reduce(sum, "USD")
+    expect(result).to eq Money.dollar(7)
+  end
 end
