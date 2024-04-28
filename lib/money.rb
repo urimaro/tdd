@@ -1,3 +1,5 @@
+require 'sum'
+
 class Money
   attr_reader :amount, :currency
 
