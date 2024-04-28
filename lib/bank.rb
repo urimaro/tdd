@@ -5,7 +5,7 @@ class Bank
   include Expression
 
   def reduce(source, to)
-    source.reduce(to)
+    source.reduce(self, to)
   end
 
   def add_rate(from, to, rate)
