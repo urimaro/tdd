@@ -50,4 +50,10 @@ RSpec.describe "Money" do
     result = bank.reduce(Money.franc(2), "USD")
     expect(result).to eq Money.dollar(1)
   end
+
+  it "Array equals" do
+    a = ["abc"]
+    b = ["abc"]
+    expect(a).to eq b
+  end
 end
