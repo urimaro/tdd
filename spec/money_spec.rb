@@ -55,5 +55,9 @@ RSpec.describe "Money" do
     a = ["abc"]
     b = ["abc"]
     expect(a).to eq b
+
+    x = { "abc" => 1 }
+    y = { "abc" => 1 }
+    expect([x]).to eq [y]
   end
 end
