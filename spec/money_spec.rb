@@ -50,4 +50,8 @@ RSpec.describe "Money" do
     result = bank.reduce(Money.franc(2), "USD")
     expect(result).to eq Money.dollar(1)
   end
+
+  it "tests identity rate" do
+    expect(Bank.new.rate("USD", "USD")).to eq 1
+  end
 end
