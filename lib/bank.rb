@@ -17,6 +17,7 @@ class Bank
   end
 
   def rate(from, to)
+    return 1 if from == to
     @rates[Pair.new(from, to)]
   end
 end
