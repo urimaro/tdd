@@ -1,7 +1,7 @@
 - [ ] $5 + 10 CHF = $10 ($ : CHF = 1 : 2)
-- [ ] $5 + $5 = $10
+- [x] $5 + $5 = $10
 - [ ] $5 + $5 がMoneyを返す
 - [x] Bank.reduce(Money)
-- [ ] Moneyを変換して換算を行う
-- [ ] Reduce(Bank, String)
+- [x] Moneyを変換して換算を行う
+- [x] Reduce(Bank, String)
 
