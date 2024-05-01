@@ -10,6 +10,10 @@ class Sum
     @addend = addend
   end
 
+  def times(multiplier)
+    Sum.new(@augend.times(multiplier), @addend.times(multiplier))
+  end
+
   def plus(addend)
     Sum.new(self, addend)
   end
