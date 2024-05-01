@@ -1,4 +1,8 @@
 module Expression
+  def times(multiplier)
+    raise NotImplementedError
+  end
+
   def plus(addend)
     raise NotImplementedError
   end
