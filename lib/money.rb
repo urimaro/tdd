@@ -1,6 +1,8 @@
 require 'sum'
 
 class Money
+  include Expression
+
   attr_reader :amount, :currency
 
   def initialize(amount, currency)
